@@ -1,16 +1,20 @@
 ---
+import BaseLayout from "../layouts/Base.layout.astro";
+import Hero from "../components/sections/Hero.astro";
+import About from "../components/sections/About.astro";
+import Work from "../components/sections/Work.astro";
+import Project from "../components/sections/Project.astro";
+import Contact from "../components/sections/Contact.astro";
+import "./styles/global.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="Rosa Perequin & Ronalyn Pagad | Team Résumé"
+  description="Meet Rosa Perequin and Ronalyn Pagad, explore their skills and services, and get in touch."
+>
+  <Hero />
+  <About />
+  <Work />
+  <Project />
+  <Contact />
+</BaseLayout>

@@ -1,0 +1,64 @@
+<section class="projects" id="projects">
+  <div class="projects-head">
+    <div class="section-label"><span>04</span><p>Projects</p></div>
+    <h2>Work we’re proud to share.</h2>
+    <p class="projects-note">Selected work across web platforms, mobile product design, and UX engineering.</p>
+  </div>
+  <div class="project-list">
+    <article class="project-card blue">
+      <div class="project-meta"><span>01</span><span>Web Design &amp; Development</span></div>
+      <div class="project-art art-dashboard" aria-hidden="true"><div class="art-sidebar"></div><div class="art-content"><i></i><i></i><i></i></div></div>
+      <div class="project-info"><h3>Kinetix Studio Showcase</h3><p>Redesigned and built a responsive marketing site for a creative agency; led UX/UI design and frontend implementation, increasing inbound project inquiries by 38% within two months.</p><div class="tags"><span>UI/UX &amp; Frontend</span><span>Next.js</span><span>+38% Leads</span></div></div>
+    </article>
+    <article class="project-card acid">
+      <div class="project-meta"><span>02</span><span>Mobile App &amp; UI System</span></div>
+      <div class="project-art art-mobile" aria-hidden="true"><div class="phone"><i></i><i></i><i></i></div></div>
+      <div class="project-info"><h3>Verde Daily Habit Tracker</h3><p>Created a calm, high-contrast mobile interface and reusable component library for daily goal tracking; owned visual design and prototyping, helping beta testers reach a 74% weekly retention rate.</p><div class="tags"><span>Product Design</span><span>Figma</span><span>74% Retention</span></div></div>
+    </article>
+    <article class="project-card dark">
+      <div class="project-meta"><span>03</span><span>Web App &amp; UX Engineering</span></div>
+      <div class="project-art art-terminal" aria-hidden="true"><div class="terminal-line">$ PulseMetrics</div><div class="terminal-progress"></div><div class="terminal-line">&gt; Analytics Hub</div></div>
+      <div class="project-info"><h3>PulseMetrics Analytics Hub</h3><p>Streamlined a dense reporting workflow into clean visual cards and fast interactive views; handled interface layout and frontend performance tuning, cutting page load times by 45% and task completion time by 30%.</p><div class="tags"><span>Frontend &amp; UX</span><span>React</span><span>-45% Load Time</span></div></div>
+    </article>
+  </div>
+</section>
+
+<style>
+  .projects { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 100px 0 130px; }
+  .projects-head { margin-bottom: 52px; }
+  .section-label { display: grid; grid-template-columns: 54px 1fr; align-items: center; border-bottom: 1px solid var(--line); }
+  .section-label span, .section-label p { margin: 0; padding-bottom: 18px; }
+  .section-label span { color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.78rem; }
+  .section-label p { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  h2 { margin: 38px 0 0; font-size: clamp(3rem, 6vw, 6rem); line-height: 0.95; letter-spacing: -0.065em; }
+  .projects-note { max-width: 500px; margin: 18px 0 0; color: var(--muted); line-height: 1.6; }
+  .project-list { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
+  .project-card { grid-column: span 6; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+  .project-card:last-child { grid-column: 4 / span 6; }
+  .project-meta { height: 62px; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; border-bottom: 1px solid rgba(23,23,23,.12); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; }
+  .project-art { height: 330px; display: grid; place-items: center; }
+  .blue .project-art { background: #aeb8ff; }
+  .acid .project-art { background: var(--acid); }
+  .dark .project-art { background: #242424; }
+  .art-dashboard { grid-template-columns: 70px 1fr; width: calc(100% - 64px); height: 250px; margin: 40px 32px; border: 8px solid #1d1d1d; border-radius: 8px; background: #f7f7f2; }
+  .art-sidebar { height: 100%; background: #dddffd; }
+  .art-content { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; align-content: center; padding: 24px; }
+  .art-content i { height: 110px; border-radius: 5px; background: white; box-shadow: 0 8px 18px rgba(30,30,30,.08); }
+  .phone { width: 170px; height: 260px; display: grid; gap: 12px; align-content: start; padding: 38px 16px 16px; border: 8px solid #171717; border-radius: 26px; background: #f8f7ef; box-shadow: 14px 14px 0 rgba(23,23,23,.16); }
+  .phone i { height: 42px; border-radius: 7px; background: #dfe7b8; }
+  .phone i:first-child { height: 80px; background: #171717; }
+  .art-terminal { width: calc(100% - 64px); height: 230px; place-content: center; margin: 50px 32px; padding: 28px; border: 1px solid #4d4d4d; border-radius: 8px; background: #171717; color: #d7d7cb; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.82rem; }
+  .terminal-progress { width: 100%; height: 5px; margin: 20px 0; border-radius: 99px; background: linear-gradient(90deg, var(--acid) 72%, #464646 72%); }
+  .project-info { min-height: 210px; padding: 28px 20px 24px; }
+  .project-info h3 { margin: 0 0 10px; font-size: 2rem; letter-spacing: -0.04em; }
+  .project-info p { min-height: 48px; margin: 0; color: var(--muted); line-height: 1.6; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+  .tags span { padding: 7px 10px; border: 1px solid var(--line); border-radius: 99px; font-size: 0.72rem; }
+
+  @media (max-width: 760px) {
+    .projects { width: calc(100% - 32px); padding: 74px 0 90px; }
+    .project-list { display: block; }
+    .project-card, .project-card:last-child { width: 100%; margin-bottom: 20px; }
+    .project-art { height: 300px; }
+  }
+</style>

@@ -1,0 +1,143 @@
+:root {
+    --ink: #171717;
+    --muted: #686860;
+    --cream: #f4f1e8;
+    --paper: #fbfaf5;
+    --line: #d9d6cb;
+    --acid: #c8ff62;
+    --blue: #596cff;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background:
+        radial-gradient(circle at 85% 12%, rgba(200, 255, 98, 0.16), transparent 16rem),
+        var(--paper);
+}
+
+body, button, input, textarea {
+    font-family: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    border-bottom: 1px solid rgba(23, 23, 23, 0.09);
+    background: rgba(251, 250, 245, 0.88);
+    backdrop-filter: blur(16px);
+}
+
+.nav-shell {
+    width: min(1120px, calc(100% - 48px));
+    height: 76px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.brand-mark {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--acid);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.78rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.nav-links a,
+.nav-cta {
+    transition: opacity 180ms ease;
+}
+
+.nav-links a:hover,
+.nav-cta:hover {
+    opacity: 0.58;
+}
+
+.nav-cta {
+    justify-self: end;
+    border-bottom: 1px solid var(--ink);
+    font-size: 0.92rem;
+    font-weight: 800;
+}
+
+.site-footer {
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto;
+    min-height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+
+@media (max-width: 700px) {
+    .nav-shell,
+    .site-footer {
+        width: min(100% - 32px, 1120px);
+    }
+
+    .nav-shell {
+        grid-template-columns: 1fr auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-cta {
+        grid-column: 2;
+    }
+
+    .site-footer {
+        padding: 28px 0;
+        min-height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}

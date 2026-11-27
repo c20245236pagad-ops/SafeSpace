@@ -1,0 +1,105 @@
+<section class="services" id="services">
+  <div class="section-label"><span>02</span><p>Services</p></div>
+  <div class="services-heading">
+    <h2>Ways we can work together.</h2>
+    <p>Starter service ideas—edit the names and descriptions to match your real experience and offerings.</p>
+  </div>
+  <div class="service-grid">
+    <article class="service-card">
+      <span class="service-index">01</span>
+      <h3>Website design &amp; build</h3>
+      <p>We craft fast, responsive marketing sites, portfolios, and custom web apps tailored to your brand story—combining clean architecture, subtle motion, and clear calls to action that turn visitors into customers.</p>
+      <div class="service-details">
+        <p class="service-detail"><strong>Deliverables</strong> · Custom responsive site, CMS setup, SEO &amp; performance tuning</p>
+        <p class="service-detail"><strong>Tools</strong> · Figma, React, Next.js, Tailwind CSS</p>
+      </div>
+    </article>
+    <article class="service-card">
+      <span class="service-index">02</span>
+      <h3>Interface &amp; visual design</h3>
+      <p>We turn complex workflows and product ideas into intuitive, accessible interfaces backed by consistent visual systems—making every screen feel effortless, cohesive, and easy to scale as your product grows.</p>
+      <div class="service-details">
+        <p class="service-detail"><strong>Deliverables</strong> · UI kit &amp; design system, interactive prototypes, UX audit</p>
+        <p class="service-detail"><strong>Tools</strong> · Figma, Design Tokens, WCAG Accessibility</p>
+      </div>
+    </article>
+    <article class="service-card">
+      <span class="service-index">03</span>
+      <h3>Content &amp; creative support</h3>
+      <p>From user research and messaging clarity to microcopy, visual assets, and launch collateral, we help shape the voice and visuals behind your product so every touchpoint feels intentional and human.</p>
+      <div class="service-details">
+        <p class="service-detail"><strong>Deliverables</strong> · UX copywriting, user interviews, visual &amp; social assets</p>
+        <p class="service-detail"><strong>Tools</strong> · Notion, Figma, Adobe Creative Cloud</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="approach" id="process">
+  <div class="section-label"><span>03</span><p>How we work</p></div>
+  <div class="approach-grid">
+    <div>
+      <h2>Good work starts with a good conversation.</h2>
+      <p class="approach-intro">A simple, collaborative process that you can adapt to the way your team works.</p>
+    </div>
+    <ol class="process-list">
+      <li><span>01</span><div><h3>Listen &amp; define</h3><p>Understand the people, goals, and needs behind the project.</p></div></li>
+      <li><span>02</span><div><h3>Plan together</h3><p>Agree on a clear scope, timeline, roles, and next steps.</p></div></li>
+      <li><span>03</span><div><h3>Create &amp; refine</h3><p>Share work early, gather feedback, and improve the details.</p></div></li>
+      <li><span>04</span><div><h3>Deliver &amp; learn</h3><p>Hand over the finished work and capture what comes next.</p></div></li>
+    </ol>
+  </div>
+  <div class="goals">
+    <div><p class="goals-label">Our goals</p><h3>What we’re working toward</h3></div>
+    <ul>
+      <li>Deepen our craft in accessible design systems and modern frontend architecture while staying sharp on emerging web standards.</li>
+      <li>Partner with thoughtful founders, studios, and growing teams on high-impact websites and digital products from concept to launch.</li>
+      <li>Create clear, dependable digital experiences that help users accomplish their goals effortlessly and drive real growth for our clients.</li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  .services, .approach { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
+  .services { padding: 48px 0 110px; }
+  .section-label { display: grid; grid-template-columns: 54px 1fr; align-items: center; border-bottom: 1px solid var(--line); }
+  .section-label span, .section-label p { margin: 0; padding-bottom: 18px; }
+  .section-label span { color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.78rem; }
+  .section-label p { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  .services-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin: 38px 0 42px; }
+  h2 { max-width: 650px; margin: 0; font-size: clamp(2.8rem, 5vw, 5.2rem); line-height: 0.98; letter-spacing: -0.065em; }
+  .services-heading > p { max-width: 330px; margin: 0 0 5px; color: var(--muted); line-height: 1.65; }
+  .service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .service-card { min-height: 285px; display: flex; flex-direction: column; align-items: flex-start; padding: 25px; border: 1px solid var(--line); border-radius: 9px; background: #fff; }
+  .service-index { color: var(--blue); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
+  .service-card h3 { margin: 36px 0 12px; font-size: 1.45rem; letter-spacing: -0.04em; }
+  .service-card p { margin: 0; color: var(--muted); line-height: 1.6; }
+  .service-details { display: grid; gap: 8px; margin-top: auto; padding-top: 24px; }
+  .service-detail { margin: 0; color: var(--muted); font-size: 0.75rem; line-height: 1.55; }
+  .service-detail strong { color: var(--ink); }
+  .approach { padding: 0 0 120px; }
+  .approach-grid { display: grid; grid-template-columns: 0.9fr 1fr; gap: 10%; padding: 56px 0 70px; }
+  .approach-intro { max-width: 390px; margin: 24px 0 0; color: var(--muted); line-height: 1.7; }
+  .process-list { margin: 0; padding: 0; list-style: none; }
+  .process-list li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .process-list li:first-child { padding-top: 0; }
+  .process-list li > span { padding-top: 4px; color: var(--blue); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.78rem; }
+  .process-list h3 { margin: 0 0 6px; font-size: 1.1rem; }
+  .process-list p { margin: 0; color: var(--muted); line-height: 1.55; }
+  .goals { display: grid; grid-template-columns: 0.9fr 1fr; gap: 10%; padding: 32px; border-radius: 10px; background: var(--cream); }
+  .goals-label { margin: 0 0 12px; color: var(--muted); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+  .goals h3 { max-width: 360px; margin: 0; font-size: 2rem; letter-spacing: -0.05em; }
+  .goals ul { display: grid; gap: 14px; margin: 0; padding-left: 20px; color: var(--muted); line-height: 1.6; }
+
+  @media (max-width: 760px) {
+    .services, .approach { width: calc(100% - 32px); }
+    .services { padding: 32px 0 80px; }
+    .services-heading, .approach-grid, .goals { grid-template-columns: 1fr; }
+    .services-heading { display: grid; gap: 20px; }
+    .service-grid { grid-template-columns: 1fr; }
+    .service-card { min-height: 240px; }
+    .approach { padding-bottom: 84px; }
+    .approach-grid { gap: 36px; padding: 42px 0 48px; }
+    .goals { gap: 22px; padding: 24px; }
+  }
+</style>

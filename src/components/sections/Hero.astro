@@ -1,0 +1,222 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span></span> A collaborative team résumé</p>
+    <h1 id="hero-title">Two perspectives.<br />One <em>thoughtful team.</em></h1>
+    <p class="intro">
+      Meet Rosa Perequin and Ronalyn Pagad. Explore our strengths, the services
+      we offer, and the work we’re building together.
+    </p>
+    <div class="hero-actions">
+      <a class="primary-button" href="#team">Meet the team <span aria-hidden="true">↓</span></a>
+      <a class="text-button" href="#services">Explore services <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <div class="code-window" aria-label="Team résumé summary">
+    <div class="window-bar">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      <span>our-team.txt</span>
+    </div>
+    <pre><code><b>TEAM</b>  Rosa Perequin
+      Ronalyn Pagad
+
+<b>FOCUS</b> [<strong>Skills to add</strong>]
+      [<strong>Shared interests</strong>]
+
+<b>GOAL</b>  [Add your shared goal]</code></pre>
+    <div class="status"><span></span> Thoughtful work, built together</div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    width: min(1120px, calc(100% - 48px));
+    min-height: 690px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+    gap: 70px;
+    align-items: center;
+  }
+
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0 0 24px;
+    color: #5d5d55;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  .eyebrow span,
+  .status span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #73b900;
+    box-shadow: 0 0 0 4px rgba(115, 185, 0, 0.12);
+  }
+
+  h1 {
+    max-width: 760px;
+    margin: 0;
+    font-size: clamp(3.6rem, 7vw, 7.2rem);
+    line-height: 0.94;
+    letter-spacing: -0.075em;
+  }
+
+  h1 em {
+    color: var(--blue);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+  }
+
+  .intro {
+    max-width: 570px;
+    margin: 28px 0 34px;
+    color: var(--muted);
+    font-size: clamp(1.05rem, 1.5vw, 1.22rem);
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .primary-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+    min-height: 54px;
+    padding: 0 20px 0 24px;
+    border: 1px solid var(--ink);
+    border-radius: 5px;
+    background: var(--ink);
+    color: white;
+    font-size: 0.92rem;
+    font-weight: 800;
+  }
+
+  .primary-button span {
+    color: var(--acid);
+  }
+
+  .text-button {
+    border-bottom: 1px solid var(--ink);
+    font-size: 0.92rem;
+    font-weight: 800;
+  }
+
+  .code-window {
+    overflow: hidden;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    background: #171717;
+    box-shadow: 16px 16px 0 #e7e3d7;
+    color: #deded7;
+    transform: rotate(2deg);
+  }
+
+  .window-bar {
+    height: 54px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 18px;
+    border-bottom: 1px solid #343434;
+    color: #97978f;
+    font-size: 0.75rem;
+  }
+
+  .dots {
+    display: flex;
+    gap: 6px;
+  }
+
+  .dots i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #555;
+  }
+
+  pre {
+    min-height: 260px;
+    margin: 0;
+    padding: 38px 28px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: clamp(0.75rem, 1.1vw, 0.88rem);
+    line-height: 2;
+  }
+
+  code b {
+    color: #ae97ff;
+  }
+
+  code strong {
+    color: var(--acid);
+    font-weight: 400;
+  }
+
+  .status {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 22px;
+    border-top: 1px solid #343434;
+    color: #aead9f;
+    font-size: 0.78rem;
+  }
+
+  .status span {
+    width: 7px;
+    height: 7px;
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      min-height: auto;
+      grid-template-columns: 1fr;
+      padding: 86px 0 96px;
+    }
+
+    .code-window {
+      max-width: 520px;
+      width: calc(100% - 16px);
+      justify-self: center;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .hero {
+      width: calc(100% - 32px);
+      gap: 52px;
+      padding-top: 64px;
+    }
+
+    h1 {
+      font-size: clamp(3.2rem, 15vw, 5rem);
+    }
+
+    .hero-actions {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    pre {
+      min-height: 220px;
+      padding: 28px 18px;
+    }
+
+    .code-window {
+      box-shadow: 8px 8px 0 #e7e3d7;
+    }
+  }
+</style>
